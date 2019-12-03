@@ -2,7 +2,9 @@
 #使用Apriori算法挖掘菜品订单关联规则
 from __future__ import print_function
 import pandas as pd
-from apriori import * #导入自行编写的apriori函数
+#from apriori import * #导入自行编写的apriori函数
+
+from chapter5.demo.code.apriori import find_rule
 
 inputfile = '../data/menu_orders.xls'
 outputfile = '../tmp/apriori_rules.xls' #结果文件
